@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@vitejs/plugin-vue': ^1.9.3
   '@vueuse/core': ^7.1.2
+  crypto: ^1.0.1
   crypto-js: 3.1.9-1
   element-plus: ^1.2.0-beta.5
   unplugin-auto-import: ^0.5.1
@@ -12,6 +13,7 @@ specifiers:
 
 dependencies:
   '@vueuse/core': 7.1.2_vue@3.2.24
+  crypto: 1.0.1
   crypto-js: 3.1.9-1
   element-plus: 1.2.0-beta.5_vue@3.2.24
   vue: 3.2.24
@@ -263,6 +265,11 @@ packages:
 
   /crypto-js/3.1.9-1:
     resolution: {integrity: sha1-/aGedh/Ad+Af+/3G6f38WeiAbNg=}
+    dev: false
+
+  /crypto/1.0.1:
+    resolution: {integrity: sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==}
+    deprecated: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
     dev: false
 
   /csstype/2.6.19:

@@ -11,8 +11,8 @@ const inputFormat = ref('utf-8')
 
 const source = ref('')
 const encryptedStr = ref('')
-const password = ref('1111111111111111')
-const iv = ref('1111111111111111')
+const password = ref('fuck-fuck-solana')
+const iv = ref('1qaz2wsx3edc4rfv')
 
 function check(field='') {
   if (!source.value && field == 'encrypt') {
@@ -122,7 +122,7 @@ function doDescrypt() {
         </select>
       </div>
       <div class="m_t10">
-        <span class="l">待加密、解密的文本:</span>
+        <span class="l">待加密文本:</span>
         <a
           class="ui-icon ui-icon-copy l"
           title="复制"
@@ -165,7 +165,7 @@ function doDescrypt() {
       </div>
       <div class="inline-block clearfix">
         <span id="formatinfo" class="r"></span>
-        <span class="l">AES加密、解密转换结果(base64了):</span>
+        <span class="l">解密转换结果(base64了):</span>
         <a class="ui-icon ui-icon-copy l" title="复制" forid="convertd" data-clipboard-text></a>
         <a class="ui-icon ui-icon-close l" title="清除" forid="convertd"></a>
         <a

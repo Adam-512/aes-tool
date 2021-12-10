@@ -10,19 +10,18 @@ const aesConfig = {
 
 export function encrypt(data, key, iv) {
   key = CryptoJS.enc.Utf8.parse(key)
-  iv = CryptoJS.enc.Utf8.parse(key)
+  iv = CryptoJS.enc.Utf8.parse(iv)
   var enData = CryptoJS.AES.encrypt(data, key, {
     iv,
     ...aesConfig
   })//output hex data
-  console.log(enData.ciphertext)
   return CryptoJS.enc.Base64.stringify(enData.ciphertext)
   // return enData.toString()
 }
 
 export function decrypt(data, key, iv) {
   key = CryptoJS.enc.Utf8.parse(key)
-  iv = CryptoJS.enc.Utf8.parse(key)
+  iv = CryptoJS.enc.Utf8.parse(iv)
 
   var decryptedData = CryptoJS.AES.decrypt(data, key, {
     iv,

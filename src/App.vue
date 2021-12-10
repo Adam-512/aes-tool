@@ -11,8 +11,8 @@ const inputFormat = ref('utf-8')
 
 const source = ref('')
 const encryptedStr = ref('')
-const password = ref('fuck-fuck-solana')
-const iv = ref('1qaz2wsx3edc4rfv')
+const password = ref('')
+const iv = ref('')
 
 function check(field='') {
   if (!source.value && field == 'encrypt') {

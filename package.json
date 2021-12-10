@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
+    "ssh2-sftp-client": "^7.2.0",
     "unplugin-auto-import": "^0.5.1",
     "unplugin-vue-components": "^0.17.6",
     "vite": "^2.6.4"

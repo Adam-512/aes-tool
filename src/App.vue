@@ -123,13 +123,6 @@ function doDescrypt() {
       </div>
       <div class="m_t10">
         <span class="l">待加密文本:</span>
-        <a
-          class="ui-icon ui-icon-copy l"
-          title="复制"
-          forid="converts"
-          data-clipboard-text="欢迎来到chacuo.net"
-        ></a>
-        <a class="ui-icon ui-icon-close l" title="清除" forid="converts"></a>&nbsp;&nbsp;&nbsp;
       </div>
       <textarea
         id="converts"
@@ -166,14 +159,6 @@ function doDescrypt() {
       <div class="inline-block clearfix">
         <span id="formatinfo" class="r"></span>
         <span class="l">解密转换结果(base64了):</span>
-        <a class="ui-icon ui-icon-copy l" title="复制" forid="convertd" data-clipboard-text></a>
-        <a class="ui-icon ui-icon-close l" title="清除" forid="convertd"></a>
-        <a
-          class="ui-icon ui-icon-transferthick-e-w l"
-          title="填充到输入框"
-          forid="convertd"
-          toid="converts"
-        ></a>
       </div>
       <textarea
         v-model="encryptedStr"
